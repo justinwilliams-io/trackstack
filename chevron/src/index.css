@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb; /* Blue accent */
+  --color-secondary: #ffffff; /* White for headings/text */
+  --color-neutral: #111827; /* Dark gray bg */
+  --color-textLight: #9ca3af; /* Light gray for body */
+  --color-success: #22c55e; /* Green for completed/upcoming */
+  --color-bg: #000000; /* Black main bg */
+  --color-card: #1f2937; /* Dark card bg */
+}
+
+body {
+  @apply bg-[var(--color-bg)] text-[var(--color-secondary)] font-sans antialiased;
+  position: relative;
+}
