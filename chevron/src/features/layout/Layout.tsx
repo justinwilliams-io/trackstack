@@ -1,8 +1,8 @@
 import { useNavigate } from '@solidjs/router';
 import { onMount } from 'solid-js';
-import Sidebar from './Sidebar';
+import { Sidebar } from '@features/sidebar';
 
-const Layout = (props: any) => {
+export const Layout = (props: any) => {
     const navigate = useNavigate();
 
     onMount(() => {
@@ -20,5 +20,3 @@ const Layout = (props: any) => {
         </div>
     );
 };
-
-export default Layout;

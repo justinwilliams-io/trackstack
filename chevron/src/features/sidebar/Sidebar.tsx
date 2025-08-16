@@ -3,7 +3,7 @@ import { A, useLocation, useNavigate } from '@solidjs/router';
 import { Icon } from 'solid-heroicons';
 import { home, documentText, cog, arrowLeftOnRectangle } from 'solid-heroicons/solid';
 
-const Sidebar = () => {
+export const Sidebar = () => {
     const [isOpen, setIsOpen] = createSignal(false);
     const location = useLocation();
     const navigate = useNavigate();
@@ -72,5 +72,3 @@ const Sidebar = () => {
         </>
     );
 };
-
-export default Sidebar;

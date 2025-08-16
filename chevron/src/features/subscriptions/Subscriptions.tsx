@@ -1,10 +1,10 @@
 import { createSignal, onMount, createMemo, For } from 'solid-js';
 import axios from 'axios';
-import Modal from './Modal';
+import { Modal } from '@components/Modal';
 
 const API_BASE = 'http://localhost:8080';
 
-const Subscriptions = () => {
+export const Subscriptions = () => {
     const [subs, setSubs] = createSignal<Subscription[]>([]);
     const [isModalOpen, setModalOpen] = createSignal(false);
     const [newName, setNewName] = createSignal('');
@@ -185,5 +185,3 @@ interface Subscription {
     RenewalDate: string;
     Frequency: string;
 }
-
-export default Subscriptions;

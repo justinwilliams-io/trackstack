@@ -1,8 +1,8 @@
 import { Router, Route } from '@solidjs/router';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
-import Subscriptions from './components/Subscriptions';
-import Layout from './components/Layout';
+import { Login } from '@features/login';
+import { Dashboard } from '@features/dashboard';
+import { Subscriptions } from '@features/subscriptions';
+import { Layout } from '@features/layout';
 
 const App = () => {
     return (

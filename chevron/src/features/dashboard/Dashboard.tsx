@@ -13,7 +13,7 @@ const chartOptions = {
 
 const API_BASE = 'http://localhost:8080';
 
-const Dashboard = () => {
+export const Dashboard = () => {
     const [month, setMonth] = createSignal('August 2025'); // Stub month selector
     const [groups, setGroups] = createSignal<Group[]>([
         {
@@ -260,5 +260,3 @@ interface Subscription {
     RenewalDate: string;
     Frequency: string;
 }
-
-export default Dashboard;

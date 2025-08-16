@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const API_BASE = 'http://localhost:8080'; // Change to Fly URL in prod
 
-const Login = () => {
+export const Login = () => {
     const [email, setEmail] = createSignal('');
     const [password, setPassword] = createSignal('');
     const [isRegister, setIsRegister] = createSignal(false);
@@ -60,5 +60,3 @@ const Login = () => {
         </div>
     );
 };
-
-export default Login;

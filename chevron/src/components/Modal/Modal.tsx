@@ -1,4 +1,4 @@
-const Modal = ({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => void; children: any }) => {
+export const Modal = ({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => void; children: any }) => {
   if (!isOpen) return null;
 
   return (
@@ -10,5 +10,3 @@ const Modal = ({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => 
     </div>
   );
 };
-
-export default Modal;

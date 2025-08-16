@@ -1,7 +1,52 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+    "files": [],
+    "references": [
+        {
+            "path": "./tsconfig.app.json"
+        },
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+        "strict": true,
+        "skipLibCheck": true,
+        "baseUrl": ".", // Enables absolute imports relative to root
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@features/*": [
+                "src/features/*"
+            ],
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@types/*": [
+                "src/types/*"
+            ],
+            "@utils/*": [
+                "src/utils/*"
+            ],
+            "@services/*": [
+                "src/services/*"
+            ],
+            "@stores/*": [
+                "src/stores/*"
+            ],
+            "@styles/*": [
+                "src/styles/*"
+            ],
+            "@assets/*": [
+                "src/assets/*"
+            ]
+        }
+    }
 }
