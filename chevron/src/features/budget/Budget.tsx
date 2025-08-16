@@ -13,7 +13,7 @@ const chartOptions = {
 
 const API_BASE = 'http://localhost:8080';
 
-export const Dashboard = () => {
+export const Budget = () => {
     const [month, setMonth] = createSignal('August 2025'); // Stub month selector
     const [groups, setGroups] = createSignal<Group[]>([
         {
